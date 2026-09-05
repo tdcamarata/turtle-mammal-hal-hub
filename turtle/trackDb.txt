@@ -1,0 +1,71 @@
+track hubCentral
+compositeTrack on
+shortLabel my hub
+longLabel my hub
+group comphub
+subGroup1 view Track_Type Snake=Alignments  
+subGroup2 orgs Organisms Anc0=Anc0 Anc1=Anc1 human=human mouse=mouse turtle=turtle
+dragAndDrop subTracks
+#allButtonPair on
+dimensions dimensionX=view dimensionY=orgs
+noInherit on
+priority 0
+centerLabelsDense on
+visibility full
+html ../documentation/hubCentral
+type bigBed 3
+
+	track hubCentralAlignments
+	shortLabel Alignments
+	view Alignments
+	visibility full
+	subTrack hubCentral
+
+		track snakeAnc0
+		longLabel Anc0
+		shortLabel Anc0
+		otherSpecies Anc0
+		visibility full
+		parent hubCentralAlignments
+		priority 2
+		bigDataUrl ../turtle_mammal.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Anc0
+
+		track snakeAnc1
+		longLabel Anc1
+		shortLabel Anc1
+		otherSpecies Anc1
+		visibility hide
+		parent hubCentralAlignments off
+		priority 3
+		bigDataUrl ../turtle_mammal.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=Anc1
+
+		track snakehuman
+		longLabel human
+		shortLabel human
+		otherSpecies human
+		visibility full
+		parent hubCentralAlignments
+		priority 4
+		bigDataUrl ../turtle_mammal.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=human
+
+		track snakemouse
+		longLabel mouse
+		shortLabel mouse
+		otherSpecies mouse
+		visibility full
+		parent hubCentralAlignments
+		priority 5
+		bigDataUrl ../turtle_mammal.hal
+		type halSnake
+		group snake
+		subGroups view=Snake orgs=mouse
+

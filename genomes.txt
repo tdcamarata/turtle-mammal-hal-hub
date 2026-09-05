@@ -1,0 +1,55 @@
+genome Anc0
+twoBitPath Anc0/Anc0.2bit
+trackDb Anc0/trackDb.txt
+groups groups.txt
+htmlPath Anc0/description.html
+description Anc0
+organism Anc0
+orderKey 4800
+scientificName Anc0
+defaultPos Anc0refChr761:1-1000
+
+genome Anc1
+twoBitPath Anc1/Anc1.2bit
+trackDb Anc1/trackDb.txt
+groups groups.txt
+htmlPath Anc1/description.html
+description Anc1
+organism Anc1
+orderKey 4800
+scientificName Anc1
+defaultPos Anc1refChr199:1-1000
+
+genome human
+twoBitPath human/human.2bit
+trackDb human/trackDb.txt
+groups groups.txt
+htmlPath human/description.html
+description human
+organism human
+orderKey 4800
+scientificName human
+defaultPos chr1:1-1000
+
+genome mouse
+twoBitPath mouse/mouse.2bit
+trackDb mouse/trackDb.txt
+groups groups.txt
+htmlPath mouse/description.html
+description mouse
+organism mouse
+orderKey 4800
+scientificName mouse
+defaultPos chr1:1-1000
+
+genome turtle
+twoBitPath turtle/turtle.2bit
+trackDb turtle/trackDb.txt
+groups groups.txt
+htmlPath turtle/description.html
+description turtle
+organism turtle
+orderKey 4800
+scientificName turtle
+defaultPos NC_048298.1:1-1000
+
